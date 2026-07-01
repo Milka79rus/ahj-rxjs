@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RxJS Reactive Widgets</title>
+</head>
+
+<body>
+  <div class="app-container">
+    <nav class="tabs-nav">
+      <button class="tab-btn active" data-tab="polling-tab">1. Polling</button>
+      <button class="tab-btn" data-tab="posts-tab">2. Posts & Comments</button>
+      <button class="tab-btn" data-tab="dashboard-tab">3. Dashboard</button>
+    </nav>
+
+    <div class="tab-content active" id="polling-tab">
+      <div class="widget-box">
+        <h2>Уведомления (Polling)</h2>
+        <table class="messages-table">
+          <thead>
+            <tr>
+              <th>От кого</th>
+              <th>Тема</th>
+              <th>Дата</th>
+            </tr>
+          </thead>
+          <tbody id="messages-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab-content" id="posts-tab">
+      <div class="widget-box">
+        <h2>Лента постов</h2>
+        <div id="posts-container" class="posts-list"></div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="dashboard-tab">
+      <div class="dashboard-layout">
+        <div class="widget-box" id="stats-widget">
+          <h2>Проекты</h2>
+          <ul id="stats-list" class="stats-list"></ul>
+        </div>
+        <div class="widget-box" id="tasks-widget">
+          <h2>Задачи</h2>
+          <select id="project-selector" class="project-select"></select>
+          <ul id="tasks-list" class="tasks-list"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
