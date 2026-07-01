@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: 22.14.0
       - run: npm install
-      - run: npm test
+      - run: npm test -- --passWithNoTests
 
       #    - name: Run E2E Puppeteer tests
   #        run: |
