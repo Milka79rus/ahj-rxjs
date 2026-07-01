@@ -53,7 +53,7 @@ export default class App {
   }
 
   initWidgets() {
-    const serverBaseUrl = 'https://server-dyggfz13f-milka79rus1.vercel.app';
+    const serverBaseUrl = 'https://server-peach-mu.vercel.app';
 
     // --- Задача 1 (Polling) ---
     const pollingWidget = new PollingWidget('messages-tbody', `${serverBaseUrl}/api/unread`);
